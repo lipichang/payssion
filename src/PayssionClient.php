@@ -171,7 +171,6 @@ class PayssionClient
      * @return array
      * @throws Exception
      */
-
     public function refunds(array $params){
         $params = isset($params['currency'])? :array_merge($params,array('currency' =>'USD'));
         return $this->call(
