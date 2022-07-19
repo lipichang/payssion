@@ -12,7 +12,7 @@ class PayssionClient
     /**
      * @const string
      */
-    const VERSION = '1.3.0.160615';
+    const VERSION = '16';
 
     /**
      * @var string
@@ -29,7 +29,7 @@ class PayssionClient
             'api_key', 'transaction_id', 'order_id', 'secret_key'
         ),
         'refunds' => array(
-            'api_key', 'transaction_id', 'amount', 'secret_key','currency'
+            'api_key', 'transaction_id', 'amount','currency','track_id',''
         )
     );
 
