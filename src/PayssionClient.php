@@ -170,6 +170,9 @@ class PayssionClient
      * @param array $params query Params
      * @return array
      * @throws Exception
+     * transaction_id   string
+     * amount double
+     * currency string default USD
      */
     public function refunds(array $params){
         $params = isset($params['currency'])? :array_merge($params,array('currency' =>'USD'));
