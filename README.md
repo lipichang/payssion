@@ -33,4 +33,32 @@ if ($payssion->isSuccess()) {
 
 ```
 
+
+``` php
+//Refunds
+$payssion = new PayssionClient('your api key', 'your secretkey');
+//please uncomment the following if you use sandbox api_key
+//$payssion = new PayssionClient('your api key', 'your secretkey', false);
+
+$response = null;
+try {
+	$response = $payssion->refunds(array(
+			'amount' => 1,
+			'currency' => 'USD',
+			'transaction_id' => 'your transactoin id',
+	));
+} catch (Exception $e) {
+	//handle exception
+	echo "Exception: " . $e->getMessage();
+}
+
+if ($payssion->isSuccess()) {
+	//handle success
+} else {
+	//handle failed
+}
+
+```
+
+
 PAYSSION PHP library
