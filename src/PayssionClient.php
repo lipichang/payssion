@@ -27,6 +27,9 @@ class PayssionClient
         ),
         'details' => array(
             'api_key', 'transaction_id', 'order_id', 'secret_key'
+        ),
+        'refunds' => array(
+            'api_key', 'transaction_id', 'amount', 'secret_key','currency'
         )
     );
 
