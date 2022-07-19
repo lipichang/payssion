@@ -107,6 +107,21 @@ class PayssionClient
     }
 
     /**
+     * Set LiveModeORg
+     *
+     * @param bool $is_livemode
+     *
+     */
+    public function setOrgUrl($is_livemode)
+    {
+        if ($is_livemode) {
+            $this->api_url = 'https://www.payssion.com/api/v1/';
+        } else {
+            $this->api_url = 'http://sandbox.payssion.com/api/v1/';
+        }
+    }
+
+    /**
      * Set Api URL
      *
      * @param string $url Api URL
