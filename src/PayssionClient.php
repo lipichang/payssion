@@ -179,7 +179,6 @@ class PayssionClient
             $params
         );
     }
-
     /**
      * Method responsible for preparing, setting state and returning answer from rest server
      *
