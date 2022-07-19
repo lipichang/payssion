@@ -42,6 +42,9 @@ $payssion = new PayssionClient('your api key', 'your secretkey');
 
 $response = null;
 try {
+     $payssion->setOrgUrl(true);
+     //please uncomment the following if you use sandbox 
+    //$payssion->setOrgUrl(false);
 	$response = $payssion->refunds(array(
 			'amount' => 1,
 			'currency' => 'USD',
