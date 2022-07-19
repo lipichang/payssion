@@ -55,12 +55,6 @@ try {
 	echo "Exception: " . $e->getMessage();
 }
 
-if ($payssion->isSuccess()) {
-	//handle success
-} else {
-	//handle failed
-}
-
 ```
 
 

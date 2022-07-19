@@ -12,7 +12,7 @@ class PayssionClient
     /**
      * @const string
      */
-    const VERSION = '16';
+    const VERSION = '2.0';
 
     /**
      * @var string
